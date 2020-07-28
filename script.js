@@ -84,7 +84,7 @@ function handleCalculate(e) {
 	}
 	if (textContent === "=" || textContent === "Enter") {
 		try {
-			input.innerText = eval(input.innerText).toFixed(4);
+			input.innerText = eval(input.innerText);
 		} catch (error) {
 			input.innerText = error.name;
 		}
